@@ -1,0 +1,62 @@
+##############################################################################
+# Copyright (c) 1991, 2001, 2002 by Oracle Corporation
+##############################################################################
+ 
+###########################################
+# NLS
+###########################################
+nls_language="SIMPLIFIED CHINESE"
+nls_territory="CHINA"
+ 
+###########################################
+# Shared Server
+###########################################
+dispatchers="(protocol=TCP)"
+shared_servers=5
+ 
+###########################################
+# Miscellaneous
+###########################################
+compatible=11.2.0.0.0
+diagnostic_dest=d:\oracle
+memory_target=1287651328
+ 
+###########################################
+# Security and Auditing
+###########################################
+audit_file_dest=d:\oracle\admin\orcl\adump
+audit_trail=db
+remote_login_passwordfile=EXCLUSIVE
+ 
+###########################################
+# Database Identification
+###########################################
+db_domain=jmu.edu.cn
+db_name=orcl
+ 
+###########################################
+# File Configuration
+###########################################
+control_files=("d:\oracle\oradata\orcl\control01.ctl", "d:\oracle\oradata\orcl\control02.ctl")
+ 
+###########################################
+# Cursors and Library Cache
+###########################################
+open_cursors=300
+ 
+###########################################
+# System Managed Undo and Rollback Segments
+###########################################
+undo_tablespace=UNDOTBS1
+ 
+###########################################
+# Processes and Sessions
+###########################################
+processes=150
+ 
+###########################################
+# Cache and I/O
+###########################################
+db_block_size=8192
+ 
+ 
